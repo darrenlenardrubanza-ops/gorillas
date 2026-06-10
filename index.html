@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gorilla Poster</title>
   <style>
+    .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -37,7 +53,11 @@
   <header>Gorilla Tourism Poster</header>
 
   <!-- Replace poster.jpg with your file name -->
-  <img src="poster.jpg" alt="Gorilla Poster">
+  <div class="gallery">
+  <img src="posters/poster1.jpg">
+  <img src="posters/poster2.jpg">
+  <img src="posters/poster3.jpg">
+</div>
 
   <footer>Discover. Respect. Protect.</footer>
 
